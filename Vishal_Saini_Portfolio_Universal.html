@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishal Saini — Brand Strategist & Growth Marketing Consultant</title>
+<meta name="description" content="Brand Strategist & Growth Marketing Consultant — 2.5 years scaling D2C brands, digital transformation, and AI-powered marketing.">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700;1,900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#111;--paper:#F6F3EC;--off:#EDEAE0;--accent:#C05A2A;--muted:#6B6558;--border:#D8D3C8;--white:#FDFCF9}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden}
+/* NAV */
+nav{background:var(--ink);padding:1.1rem 4rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.nl{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:700;color:var(--paper)}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-size:0.75rem;color:rgba(245,242,235,0.45);text-decoration:none;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{background:var(--accent);color:var(--white)!important;padding:7px 18px;font-size:0.72rem!important;letter-spacing:1.5px}
+/* HERO */
+.hero{min-height:90vh;display:grid;grid-template-columns:1.2fr 0.8fr;background:var(--ink)}
+.hl{padding:5.5rem 4rem;display:flex;flex-direction:column;justify-content:center}
+.ey{font-size:0.68rem;letter-spacing:4px;text-transform:uppercase;color:var(--accent);margin-bottom:2rem}
+.hl h1{font-family:'Fraunces',serif;font-size:4.8rem;line-height:0.93;font-weight:900;color:var(--paper);margin-bottom:2rem;letter-spacing:-2px}
+.hl h1 em{font-style:italic;color:var(--accent)}
+.hl p{font-size:0.97rem;color:rgba(245,242,235,0.48);line-height:1.9;max-width:460px;margin-bottom:3rem;font-weight:300}
+.metrics{display:flex;gap:2rem;flex-wrap:wrap}
+.metric{border-left:2px solid var(--accent);padding-left:1rem}
+.mn{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:700;color:var(--paper);line-height:1}
+.ml{font-size:0.65rem;color:rgba(245,242,235,0.32);letter-spacing:1.5px;text-transform:uppercase;margin-top:3px}
+.hr2{background:rgba(255,255,255,0.025);border-left:1px solid rgba(255,255,255,0.06);padding:5.5rem 2.5rem;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.hrl{font-size:0.62rem;letter-spacing:3px;color:rgba(245,242,235,0.2);text-transform:uppercase;margin-bottom:4px}
+.rt{border:1px solid rgba(255,255,255,0.07);padding:0.9rem 1.2rem;transition:border-color 0.2s}
+.rt:hover{border-color:rgba(192,90,42,0.35)}
+.rtn{font-size:0.83rem;color:rgba(245,242,235,0.65)}
+.rtd{font-size:0.7rem;color:rgba(245,242,235,0.28);margin-top:2px}
+/* SECTIONS */
+section{padding:5rem 4rem}
+.ey2{font-size:0.66rem;letter-spacing:4px;text-transform:uppercase;color:var(--accent);margin-bottom:0.8rem}
+.rule{width:32px;height:2px;background:var(--accent);margin-bottom:2rem}
+.st{font-family:'Fraunces',serif;font-size:2.5rem;font-weight:700;line-height:1.1;margin-bottom:1rem}
+.ss{font-size:0.93rem;color:var(--muted);line-height:1.85;max-width:540px;font-weight:300}
+/* ABOUT */
+.story{background:var(--white)}
+.sg{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;margin-top:3rem;align-items:start}
+.st2 p{font-size:0.92rem;color:#3A3730;line-height:1.95;margin-bottom:1.1rem;font-weight:300}
+.st2 p strong{font-weight:500;color:var(--ink)}
+.etl{display:flex;flex-direction:column}
+.ei{padding:1.1rem 0;border-bottom:1px solid var(--border);display:grid;grid-template-columns:1fr auto;gap:0.8rem;align-items:start}
+.ei:first-child{border-top:1px solid var(--border)}
+.er{font-size:0.86rem;font-weight:500;margin-bottom:2px}
+.eo{font-size:0.76rem;color:var(--accent)}
+.eyr{font-size:0.68rem;color:var(--muted);white-space:nowrap;letter-spacing:1px}
+/* 6 SKILLS */
+.sb{background:var(--off);padding:4rem}
+.s6{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:2.5rem}
+.sk{background:var(--white);padding:1.8rem}
+.skn{font-family:'Fraunces',serif;font-size:2.8rem;font-weight:900;color:var(--border);line-height:1;margin-bottom:0.8rem}
+.sk h4{font-size:0.87rem;font-weight:500;color:var(--ink);margin-bottom:6px}
+.sk p{font-size:0.79rem;color:var(--muted);line-height:1.7;font-weight:300}
+/* PROJECTS */
+.ps{background:var(--ink)}
+.ps .ey2,.ps .rule{color:var(--accent);background:var(--accent)}
+.ps .st{color:var(--paper)}
+.ps .ss{color:rgba(245,242,235,0.4)}
+.pl{margin-top:3rem;display:flex;flex-direction:column}
+.proj{padding:2.5rem 0;border-bottom:1px solid rgba(255,255,255,0.06);display:grid;grid-template-columns:170px 1fr 190px;gap:2.5rem;align-items:start}
+.proj:first-child{border-top:1px solid rgba(255,255,255,0.06)}
+.pn{font-family:'Fraunces',serif;font-size:3.5rem;font-weight:900;color:rgba(255,255,255,0.04);line-height:1;margin-bottom:5px}
+.pc{font-size:0.63rem;letter-spacing:2.5px;color:var(--accent);text-transform:uppercase}
+.proj h3{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;color:var(--paper);margin-bottom:0.8rem;line-height:1.2}
+.proj p{font-size:0.83rem;color:rgba(245,242,235,0.42);line-height:1.85;margin-bottom:1.1rem;font-weight:300}
+.ptags{display:flex;flex-wrap:wrap;gap:5px}
+.pt{border:1px solid rgba(192,90,42,0.2);padding:3px 10px;font-size:0.67rem;color:rgba(192,90,42,0.75);letter-spacing:0.8px}
+.results{display:flex;flex-direction:column;gap:8px}
+.rb{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);padding:0.9rem 1.1rem}
+.rbn{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;color:var(--accent);line-height:1}
+.rbl{font-size:0.65rem;color:rgba(245,242,235,0.28);text-transform:uppercase;letter-spacing:1px;margin-top:3px;line-height:1.3}
+/* SERVICES */
+.svc-section{background:var(--white)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.svc-card{border:1px solid var(--border);padding:2rem;background:var(--paper);transition:border-color 0.2s}
+.svc-card:hover{border-color:var(--accent)}
+.svc-icon{font-size:1.5rem;margin-bottom:1rem;display:block}
+.svc-card h4{font-size:0.92rem;font-weight:500;color:var(--ink);margin-bottom:0.6rem}
+.svc-card p{font-size:0.8rem;color:var(--muted);line-height:1.7;font-weight:300}
+/* TOOLKIT */
+.ts{background:var(--paper)}
+.tg{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2.5rem}
+.tgrp h4{font-size:0.63rem;letter-spacing:3px;color:var(--accent);text-transform:uppercase;margin-bottom:1.2rem}
+.ti{display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--border);font-size:0.81rem;color:#3A3730;font-weight:300}
+.ti:last-child{border-bottom:none}
+.tl{font-size:0.68rem;color:var(--accent);letter-spacing:1px}
+/* CTA */
+.cta-section{background:var(--ink);padding:5.5rem 4rem;text-align:center}
+.cta-section .ey2{color:var(--accent)}
+.cta-section .rule{background:var(--accent);margin:0 auto 2rem}
+.cta-section h2{font-family:'Fraunces',serif;font-size:2.8rem;font-weight:900;font-style:italic;color:var(--paper);max-width:600px;margin:0 auto 1.5rem;line-height:1.05}
+.cta-section p{font-size:0.96rem;color:rgba(245,242,235,0.52);max-width:500px;margin:0 auto 2.8rem;line-height:1.9;font-weight:300}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cta-primary{background:var(--accent);color:var(--white);padding:15px 38px;font-weight:500;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all 0.2s}
+.cta-primary:hover{background:#A04820}
+.cta-outline{background:transparent;color:rgba(245,242,235,0.65);padding:15px 38px;font-weight:400;font-size:0.85rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,0.15);transition:all 0.2s}
+.cta-outline:hover{border-color:var(--accent);color:var(--accent)}
+/* FOOTER */
+footer{background:#0A0A0A;padding:2rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.fl .fn{font-family:'Fraunces',serif;font-size:1rem;color:var(--paper);font-weight:700}
+.fl p{font-size:0.72rem;color:rgba(245,242,235,0.25);margin-top:4px;letter-spacing:1px}
+.fr2{display:flex;gap:2rem}
+.fr2 a{font-size:0.75rem;color:rgba(245,242,235,0.28);text-decoration:none}
+.fr2 a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nl">Vishal Saini</div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#services">Services</a>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hl">
+    <div class="ey">Brand Strategist · Growth Consultant · Available for Hire</div>
+    <h1>Strategy<br>that <em>scales.</em><br>Stories<br>that sell.</h1>
+    <p>2.5 years building brands from the ground up — logo to AI automation. I scale D2C service brands, run profitable ad campaigns, and build the marketing systems that keep businesses growing long after I'm done.</p>
+    <div class="metrics">
+      <div class="metric"><div class="mn">2.5yr</div><div class="ml">Experience</div></div>
+      <div class="metric"><div class="mn">40%</div><div class="ml">Client Growth</div></div>
+      <div class="metric"><div class="mn">₹1.1L</div><div class="ml">Ads Managed</div></div>
+      <div class="metric"><div class="mn">90-100</div><div class="ml">Leads Generated</div></div>
+    </div>
+  </div>
+  <div class="hr2">
+    <div class="hrl">I work best as</div>
+    <div class="rt"><div class="rtn">Brand Strategist</div><div class="rtd">Identity, positioning, voice</div></div>
+    <div class="rt"><div class="rtn">Growth Marketing Manager</div><div class="rtd">Funnels, CAC, multi-channel</div></div>
+    <div class="rt"><div class="rtn">Brand Manager (D2C)</div><div class="rtd">End-to-end brand ownership</div></div>
+    <div class="rt"><div class="rtn">Marketing Strategy Consultant</div><div class="rtd">GTM, authority ecosystem</div></div>
+    <div class="rt"><div class="rtn">Digital Transformation Lead</div><div class="rtd">AI automation, SOPs, legacy→digital</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="story" id="about">
+  <div class="ey2">Who I Am</div>
+  <div class="rule"></div>
+  <div class="sg">
+    <div class="st2">
+      <div class="st">Not just a marketer.<br>A brand builder.</div>
+      <p>I'm Vishal Saini, based in New Delhi. <strong>MBA in Marketing & International Business + PGPM in Digital Marketing</strong> — with 2.5 years of real execution across five industries.</p>
+      <p>I've taken D2C service brands from absolute zero — no logo, no website, no digital presence — to fully operational brand ecosystems. I handle everything: brand identity, website, AI tools, paid ads, social media, automation workflows, collateral, team training, and SOPs.</p>
+      <p>I've also done B2G sales at JRCL Steel (expanded government contractor network by 30%), luxury real estate investment management at Square Yards, and full e-commerce operations for Shiv Textile across Amazon, Myntra, and Noon. Every industry taught me something different about how brands actually win.</p>
+    </div>
+    <div>
+      <div class="ey2" style="margin-bottom:0.5rem">Where I've Worked</div>
+      <div class="etl">
+        <div class="ei"><div><div class="er">Brand Manager & Marketing Consultant</div><div class="eo">Aone Tax LLP & Aone Jobs (D2C)</div></div><div class="eyr">2026–Now</div></div>
+        <div class="ei"><div><div class="er">Assistant Manager – B2B & B2C Sales</div><div class="eo">Realty Assistant</div></div><div class="eyr">2025–26</div></div>
+        <div class="ei"><div><div class="er">Sales Manager – B2B/B2G</div><div class="eo">JRCL Steel Pvt. Ltd.</div></div><div class="eyr">2024–25</div></div>
+        <div class="ei"><div><div class="er">Senior Investment Manager</div><div class="eo">Square Yards</div></div><div class="eyr">2024</div></div>
+        <div class="ei"><div><div class="er">Social Media / E-Commerce Manager</div><div class="eo">Infokey Technology & Shiv Textile</div></div><div class="eyr">2022–23</div></div>
+        <div class="ei"><div><div class="er">MBA + PGPM — GGSIPU, New Delhi</div><div class="eo">BBA — Kurukshetra University</div></div><div class="eyr">Education</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 CORE COMPETENCIES -->
+<div class="sb">
+  <div class="ey2">Core Competencies</div>
+  <div class="rule"></div>
+  <div class="st" style="margin-bottom:0">What I bring to every brand</div>
+  <div class="s6">
+    <div class="sk"><div class="skn">01</div><h4>Marketing & Industry Expertise</h4><p>Deep understanding of marketing principles, consumer behavior, and evolving industry trends across B2B, B2C, D2C, and B2G markets spanning 5+ industries.</p></div>
+    <div class="sk"><div class="skn">02</div><h4>Analytical & Data-Driven Decisions</h4><p>Market trend analysis, sales data interpretation, consumer feedback synthesis, NPS insights, and data scraping to build high-quality lead databases and sharpen targeting.</p></div>
+    <div class="sk"><div class="skn">03</div><h4>Creativity & Content Strategy</h4><p>Full creative ownership — logo design, website development, content calendars, sales PPT, brochures, visiting cards, banners, A+ content, and campaign creative direction.</p></div>
+    <div class="sk"><div class="skn">04</div><h4>Communication & Project Management</h4><p>End-to-end project ownership across timelines, budgets, and vendors — simultaneously coordinating logo design, website dev, AI tool deployment, and team training.</p></div>
+    <div class="sk"><div class="skn">05</div><h4>New Product Development</h4><p>Market sizing, competition benchmarking, and launch management — from D2C job platform positioning and pricing to multi-marketplace e-commerce catalog strategy.</p></div>
+    <div class="sk"><div class="skn">06</div><h4>ATL & BTL Promotional Strategies</h4><p>Multi-channel brand communication — Meta ads (₹1.1L managed, 90-100 leads), print collateral, telecalling campaigns, field outreach, and integrated consumer research.</p></div>
+  </div>
+</div>
+
+<!-- WORK / PROJECTS -->
+<section class="ps" id="work">
+  <div class="ey2">Selected Work</div>
+  <div class="rule"></div>
+  <div class="st">Real projects. Real results.</div>
+  <p class="ss">Every project is built on actual execution — no theory, no fluff.</p>
+  <div class="pl">
+
+    <div class="proj">
+      <div><div class="pn">01</div><div class="pc">D2C Brand · Full Build</div></div>
+      <div>
+        <h3>Aone Tax Consultant LLP — Zero to Brand Ecosystem</h3>
+        <p>Started from zero — no logo, no website, no digital presence. Redesigned logo (fixed existing design flaws), built website, set up email signatures and login IDs, optimized GMB + LinkedIn + Facebook + Instagram + YouTube (all interlinked). Built a custom AI knowledge base for the CA team (ICAI guidelines + regulations). Ran Meta ads (₹1.1L → 90-100 leads). Created content calendar, brochures, visiting cards, banners, sales PPT, telecalling scripts. Built n8n automation (lead → WhatsApp). Designed SOPs and trained the marketing team.</p>
+        <div class="ptags">
+          <span class="pt">Logo Redesign</span><span class="pt">Website Dev</span><span class="pt">AI Knowledge Base</span><span class="pt">Meta Ads</span><span class="pt">n8n Automation</span><span class="pt">SOPs & Training</span><span class="pt">Content Calendar</span><span class="pt">All Social Platforms</span><span class="pt">Full Brand Collateral</span>
+        </div>
+      </div>
+      <div class="results">
+        <div class="rb"><div class="rbn">40%</div><div class="rbl">Client acquisition growth</div></div>
+        <div class="rb"><div class="rbn">90-100</div><div class="rbl">Leads from ₹1.1L Meta</div></div>
+        <div class="rb"><div class="rbn">50%</div><div class="rbl">Less manual operations</div></div>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div><div class="pn">02</div><div class="pc">D2C Platform · Brand Setup</div></div>
+      <div>
+        <h3>Aone Jobs — D2C Job Platform Built from Scratch</h3>
+        <p>Complete brand and digital setup for a D2C job portal targeting job seekers and employers across North India. Built brand identity, platform positioning, social media strategy, dual audience targeting framework (B2C job seekers + B2B employers), content marketing system, and all digital touchpoints from day one.</p>
+        <div class="ptags">
+          <span class="pt">Brand Identity</span><span class="pt">Platform Positioning</span><span class="pt">D2C Growth</span><span class="pt">Dual Audience Strategy</span><span class="pt">Social Media Setup</span><span class="pt">Content Marketing</span>
+        </div>
+      </div>
+      <div class="results">
+        <div class="rb"><div class="rbn">D2C</div><div class="rbl">Brand from scratch</div></div>
+        <div class="rb"><div class="rbn">B2B+C</div><div class="rbl">Dual audience system</div></div>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div><div class="pn">03</div><div class="pc">E-Commerce · Multi-marketplace</div></div>
+      <div>
+        <h3>Shiv Textile — Amazon, Myntra & Noon Full Operations</h3>
+        <p>Complete e-commerce management across three major marketplaces. Set up seller accounts, created SEO-optimized listings with enhanced A+ content, ran PPC campaigns, managed inventory, processed orders, tracked P&L across channels. Also developed influencer outreach strategies and Blue Tick verification roadmaps for brand credibility.</p>
+        <div class="ptags">
+          <span class="pt">Amazon Seller</span><span class="pt">A+ Content</span><span class="pt">PPC Ads</span><span class="pt">Myntra / Noon</span><span class="pt">SEO Listings</span><span class="pt">Inventory Mgmt</span><span class="pt">Influencer Outreach</span>
+        </div>
+      </div>
+      <div class="results">
+        <div class="rb"><div class="rbn">3</div><div class="rbl">Marketplaces managed</div></div>
+        <div class="rb"><div class="rbn">A+</div><div class="rbl">Enhanced brand content</div></div>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div><div class="pn">04</div><div class="pc">B2G Sales · Govt Networks</div></div>
+      <div>
+        <h3>JRCL Steel — B2G Contractor Network Expansion, North India</h3>
+        <p>Spearheaded B2B/B2G sales across Delhi, Haryana, UP, and Uttarakhand. Built strategic partnerships with government contractors (NHAI, PWD) for infrastructure projects. Used data scraping for real-time tender intelligence. Managed full sales cycles — Proforma Invoice to final dispatch — with zero supply chain lag.</p>
+        <div class="ptags">
+          <span class="pt">B2G Sales</span><span class="pt">NHAI / PWD Networks</span><span class="pt">Tender Intelligence</span><span class="pt">Data Scraping</span><span class="pt">North India Market</span>
+        </div>
+      </div>
+      <div class="results">
+        <div class="rb"><div class="rbn">30%</div><div class="rbl">Contractor network growth</div></div>
+        <div class="rb"><div class="rbn">4</div><div class="rbl">States covered</div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="svc-section" id="services">
+  <div class="ey2">What I Offer</div>
+  <div class="rule"></div>
+  <div class="st">Services</div>
+  <p class="ss">End-to-end brand and marketing support — strategy to execution.</p>
+  <div class="svc-grid">
+    <div class="svc-card"><span class="svc-icon">🎯</span><h4>Brand Strategy & Identity</h4><p>Logo design, brand guidelines, positioning, GTM strategy, and competitive differentiation for B2B and D2C brands.</p></div>
+    <div class="svc-card"><span class="svc-icon">📈</span><h4>Growth Marketing</h4><p>Meta and Google Ads management, sales funnel optimization, lead generation, and CAC-focused multi-channel campaigns.</p></div>
+    <div class="svc-card"><span class="svc-icon">🤖</span><h4>AI & Marketing Automation</h4><p>n8n workflows, Claude API integration, WhatsApp automation, data scraping, and CRM pipeline automation.</p></div>
+    <div class="svc-card"><span class="svc-icon">📱</span><h4>Social Media & Content</h4><p>Platform setup and optimization, content calendars, brand copywriting, and multi-platform content strategy.</p></div>
+    <div class="svc-card"><span class="svc-icon">🛒</span><h4>E-Commerce Management</h4><p>Amazon, Meesho, Myntra, and Noon — account setup, A+ content, PPC, inventory, and marketplace growth.</p></div>
+    <div class="svc-card"><span class="svc-icon">🏗️</span><h4>Digital Transformation</h4><p>Taking legacy businesses digital — website development, SOPs, team training, and complete digital ecosystem setup.</p></div>
+  </div>
+</section>
+
+<!-- TOOLKIT -->
+<section class="ts">
+  <div class="ey2">Skills & Toolkit</div>
+  <div class="rule"></div>
+  <div class="st">What's in the arsenal</div>
+  <div class="tg">
+    <div>
+      <div class="tgrp">
+        <h4>Strategy & Marketing</h4>
+        <div class="ti"><span>Brand Strategy & GTM Planning</span><span class="tl">Expert</span></div>
+        <div class="ti"><span>Content Strategy & Storytelling</span><span class="tl">Expert</span></div>
+        <div class="ti"><span>Meta Ads & PPC Campaigns</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>Social Media Marketing</span><span class="tl">Expert</span></div>
+        <div class="ti"><span>Sales Funnel Optimization</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>Influencer Marketing</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>SEO & Marketplace Optimization</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>ATL & BTL Campaigns</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>B2B / B2G Business Development</span><span class="tl">Expert</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="tgrp">
+        <h4>Tech, Creative & Operations</h4>
+        <div class="ti"><span>n8n Workflow Automation</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>Claude API & AI Integration</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>Logo & Brand Identity Design</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>Website Development (Managed)</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>Data Scraping & Excel Databases</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>E-Commerce (Amazon / Meesho / Noon)</span><span class="tl">Expert</span></div>
+        <div class="ti"><span>CRM & Lead Management</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>SOPs & Team Training</span><span class="tl">Advanced</span></div>
+        <div class="ti"><span>Sales Collateral (PPT / Brochure / Cards)</span><span class="tl">Expert</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<div class="cta-section" id="contact">
+  <div class="ey2">Let's Work Together</div>
+  <div class="rule"></div>
+  <h2>Ready to build something that actually grows?</h2>
+  <p>Whether you need a brand built from scratch, a growth strategy, AI automation, or a full digital transformation — I bring strategy and execution together. Let's talk.</p>
+  <div class="cta-btns">
+    <a class="cta-primary" href="mailto:mrvishalsaini9@gmail.com">Email Me →</a>
+    <a class="cta-outline" href="https://linkedin.com/in/marketervishalsaini" target="_blank">Connect on LinkedIn</a>
+  </div>
+</div>
+
+<footer>
+  <div class="fl">
+    <div class="fn">Vishal Saini</div>
+    <p>Brand Strategist & Growth Marketing Consultant · New Delhi, India</p>
+  </div>
+  <div class="fr2">
+    <a href="mailto:mrvishalsaini9@gmail.com">mrvishalsaini9@gmail.com</a>
+    <a href="tel:+917669655501">+91-7669655501</a>
+    <a href="https://linkedin.com/in/marketervishalsaini" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+</body>
+</html>
